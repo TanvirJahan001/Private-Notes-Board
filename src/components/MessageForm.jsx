@@ -1,4 +1,3 @@
-// components/MessageForm.jsx
 import EmojiPicker from "emoji-picker-react";
 import React, { useRef, useState } from "react";
 
@@ -30,7 +29,7 @@ const MessageForm = ({ addMessage }) => {
   return (
     <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg">
       <textarea
-        className="border border-gray-300 dark:border-gray-600 p-2 rounded w-full mb-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        className="border border-gray-300 dark:border-gray-600 p-2 rounded w-full mb-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white dark:bg-gray-700 text-black dark:text-white"
         placeholder="Write a Note..."
         value={text}
         onChange={(e) => setText(e.target.value)}
@@ -38,13 +37,13 @@ const MessageForm = ({ addMessage }) => {
       <div className="flex items-center space-x-2">
         <button
           onClick={() => setShowPicker(!showPicker)}
-          className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded"
+          className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded"
         >
           Emoji
         </button>
         <button
           onClick={handleSubmit}
-          className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded"
+          className="bg-green-500 hover:bg-green-600 text-white p-2 rounded"
         >
           Add Note
         </button>
