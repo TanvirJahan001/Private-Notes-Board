@@ -5,7 +5,7 @@ const SearchBar = ({ setSearchTerm }) => {
   return (
     <input
       type="text"
-      className="border border-gray-300 dark:border-gray-600 p-2 rounded w-full mb-4 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+      className="border border-gray-300 dark:border-gray-600 p-2 rounded w-full mb-4 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white dark:bg-gray-700 text-black dark:text-white"
       placeholder="Search Notes..."
       onChange={(e) => setSearchTerm(e.target.value)}
     />
